@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    
+	<!-------->
+
+	<style>
+		* {
+			margin: 40;
+			padding: 40;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Lora', serif;
+			padding: 16px;
+			text-align: center;
+			margin: 15px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #373737;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 20px;
+		}
+
+		.background {
+			background-color: #191919;
+		}
+
+		.border {
+			border: 1px solid #373737;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+
+		<a id="months" onclick="navigate(this.id)" href="#">MONTHS</a>
+		<a id="invest" onclick="navigate(this.id)" href="#">INVEST</a>
+		<a id="cashflow" onclick="navigate(this.id)" href="#">CASHFLOW</a>
+		<a id="budget" onclick="navigate(this.id)" href="#">BUDGET</a>
+		<a id="balance" onclick="navigate(this.id)" href="#">BALANCE</a>
+		<a id="receipt" onclick="navigate(this.id)" href="#">RECEIPT</a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == "months")
+				window.open("https://www.notion.so/sstonelli/b8966af05f884dc1bf78aed7c40792a0?pvs=4").focus();
+			else if (id == "invest")
+				window.open("https://www.notion.so/sstonelli/INVESTMENTS-9bb54c603a5d4d0492c9c3b671ad38fd?pvs=4").focus();
+			else if (id == "cashflow")
+				window.open("https://www.notion.so/sstonelli/050788a48c714bb28ab65826cbb7a527?pvs=4").focus();
+			else if (id == "budget")
+				window.open("https://www.notion.so/sstonelli/BUDGET-8348bd581a1d46eb94d7dfc18ac70026?pvs=4").focus();
+			else if (id == "balance")
+				window.open("https://www.notion.so/sstonelli/BALANCE-CASHFLOW-393946eba98f4c959d760f0d2485fe67?pvs=4").focus();
+			else if (id == "receipt")
+				window.open("https://www.notion.so/sstonelli/receipt-14869010f0b64104872d7e0d10e167e7?pvs=4").focus();
+			else if (id == "exit")
+				window.open("https://www.notion.so/sstonelli/HIH-bffdbb45841a47f7bf33e50247b4c508?pvs=4").focus();
+
+
+		}
+	</script>
+
+
+</body>
+
+</html>
